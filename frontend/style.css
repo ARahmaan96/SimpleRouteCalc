@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background-color: #252525;
+  color: #ddd;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+}
+
+.calculator {
+  border: 3px solid #1862b8;
+  background-color: #171a1f;
+  border-radius: 2rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.calculator:hover {
+  box-shadow: 0 0 10px 10px #1862b8;
+  outline: 1px solid #ddd;
+}
+
+.screen {
+  width: 29rem;
+  min-height: 10rem;
+  padding: 3rem 1rem;
+  overflow-x: auto;
+  text-align: right;
+}
+
+.controllers {
+  display: grid;
+  margin-top: 1rem;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  gap: 1rem;
+}
+.equle {
+  grid-column: span 2;
+}
+button {
+  font-size: 2.5rem;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  background-color: #2e3136;
+  color: #ddd;
+}
+button:focus {
+  outline: #1862b8 1px solid;
+}
+button:hover {
+  box-shadow: 0 0 10px 0px #1862b8;
+}
+
+.btn-primary {
+  background-color: #225fb5;
+}
+
+.btn-gray1 {
+  background-color: #616162;
+}
+.btn-gray2 {
+  background-color: #a6a6a6;
+}
